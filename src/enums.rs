@@ -1,6 +1,6 @@
 use crate::tasks::{PrimitiveTask, CompTask};
 
-
+#[derive(PartialEq, Clone)]
 pub enum ConditionType {
     Equal,
     NotEqual,
@@ -20,7 +20,7 @@ pub enum ConditionStrictness {
     Any,
     All,
     AlwaysPass,
-\}
+}
 
 pub enum EffectType {
     Add,

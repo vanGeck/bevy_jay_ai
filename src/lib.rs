@@ -4,6 +4,7 @@ pub mod agent;
 pub mod tasks;
 pub mod enums;
 pub mod planner;
+pub mod condition;
 
 
 pub struct CurrentWorldState {
@@ -11,13 +12,8 @@ pub struct CurrentWorldState {
 }
 
 pub enum WorldState {
-
-}
-
-pub struct Condition {
-    pub state:isize,
-    pub value:u8,
-    pub con_type:ConditionType,
+    FoodInRange,
+    EnemyInRange,
 }
 
 pub struct Effect {
@@ -30,3 +26,9 @@ pub trait Operator {
     fn execute(&self);
 }
 
+pub enum Tasks {
+    Idle,
+    NavigateToFood,
+    ConsumeFood,
+    Feed__,
+}

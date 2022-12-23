@@ -3,7 +3,7 @@ use crate::{tasks::PrimitiveTask, CurrentWorldState};
 pub fn create_plan(){
     let mut tasks_to_process:Vec<PrimitiveTask> = Vec::new();
     let mut plan:Vec<PrimitiveTask> = Vec::new();
-    let mut working_state = CurrentWorldState::new();
+    //let mut working_state = CurrentWorldState::new();
     // let mut domain: Domain;
 
     // Push toplevel compound task from the domain onto the processing stack.
